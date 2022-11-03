@@ -30,7 +30,7 @@ di background-image URL -->
 
 <body>
 
-  <!-- Ganti Audio di sini --><audio id="linkmp3">https://feeldreams.github.io/playdate.mp3</audio>
+  <!-- Ganti Audio di sini --><audio id="linkmp3">https://ibnuard.github.io/feeldream-love/thanks4lovingme.mp3</audio>
 
   <div id="bodyblur">
     <!-- Wallpaper --><img src="https://i.ibb.co/fYFVxbJ/Whats-App-Image-2022-11-03-at-20-40-47.jpg" id="wallpaper"
@@ -61,6 +61,7 @@ di background-image URL -->
         <p id="kalimat2">Yuhuuuu!!!🥳</p>
         <p id="kalimatb2">Makasi sayanggg😆❤️</p>
         <p id="kalimatc2">Sayanggku emang cantikkk bangettt no debattt!!!</p>
+
       </blockquote>
     </div>
 
@@ -84,33 +85,184 @@ di background-image URL -->
 
   <!-- Jangan Edit Bagian Ini -->
   <script>
-    var ai = 0, katangetik2; ftganti = 0; flag = 1; flagg = 1; fungsi = 0; function showDiv() { pesanwhatsapp = "Aku ga marah ko><"; bq.style = "display:none"; Content.style = "opacity:1;margin-top:15vh;"; ket.style = "margin-top:30px"; }
-    function memulai() { bq.style = "display:flex"; suratin.style = "transition:all 1s ease;transform:scale(.1);opacity:0"; ket.style = "transition:all 1s ease;transform:scale(.1);opacity:0"; setTimeout(mulaikonten, 300) }
+    var ai = 0,
+      katangetik2;
+    ftganti = 0;
+    flag = 1;
+    flagg = 1;
+    fungsi = 0;
 
-    function mulaikonten() { bodyblur.style = "opacity:.7;animation:none"; beneranblur.style = "-webkit-backdrop-filter:blur(2px); backdrop-filter:blur(2px)"; wallpaper.style = "transform: scale(1.8)"; suratin.style = "display:none"; ket.style = "display:none"; fotoakhir.style = "display:inline-flex;"; setTimeout(ftmuncul, 100); Content.style = "opacity:1;margin-top:2vh;"; bq.style = "opacity:1;visibility:visible;margin-top:5px"; otomatis(); fungsi = 1; setTimeout(tombol, 500); }
+    function showDiv() {
+      pesanwhatsapp = "Aku ga marah ko><";
+      bq.style = "display:none";
+      Content.style = "opacity:1;margin-top:15vh;";
+      ket.style = "margin-top:30px";
+    }
 
-    function ftmuncul() { if (ftganti == 0) { fotoakhir.style = "display:inline-flex;opacity:1;transform:scale(1)"; } else { fotoakhir.src = fotoakhir2.src; fotoakhir.style = "display:inline-flex;opacity:1;transition:all .7s ease;transform:scale(1)"; } }
-    function fthilang() { fotoakhir.style = "display:inline-flex;opacity:1;transition:all .7s ease;transform:scale(.1)"; }
 
-    function tombol() { Tombol.style = "margin-top:15px;opacity:1;transform: scale(1);"; Bn.style = "margin:12px 0 12px 12px"; ftom = 1; } ftom = 0; function fakhiran() { document.getElementById("akhiran").style = "display:inline-flex"; }
+    function memulai() {
+      bq.style = "display:flex";
+      suratin.style = "transition:all 1s ease;transform:scale(.1);opacity:0";
+      ket.style = "transition:all 1s ease;transform:scale(.1);opacity:0";
+      setTimeout(mulaikonten, 300)
+    }
 
-    const swalst = Swal.mixin({ timer: 2500, allowOutsideClick: false, showConfirmButton: false, timerProgressBar: true, imageWidth: 90, imageHeight: 90, }); audio = new Audio('' + linkmp3.innerHTML); const swals = Swal.mixin({ allowOutsideClick: false, cancelButtonColor: '#FF0040', imageWidth: 100, imageHeight: 100, }); const style = document.createElement('style'); var today = new Date(); var dd = String(today.getDate()).padStart(2, '0'); var mm = String(today.getMonth() + 1).padStart(2, '0'); var yyyy = today.getFullYear(); const monthNames = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"]; today = dd + ' ' + monthNames[today.getMonth()] + ' ' + yyyy;
-    function multifungsi() { if (ftom == 1) { diterima(); } if (ftom == 5) { menuju(); } }
-    function otomatis() { befanimkata(); setTimeout(animkata, 300); }
-    function befanimkata() { kalimat.style = "transform:scale(.3);"; kalimatb.style = "transform:scale(.3);"; kalimatc.style = "transform:scale(.3);"; }
-    function animkata() { kalimat.style = "transform:scale(1);"; kalimatb.style = "transform:scale(1);"; kalimatc.style = "transform:scale(1);"; }
+    function mulaikonten() {
+      bodyblur.style = "opacity:.7;animation:none";
+      beneranblur.style = "-webkit-backdrop-filter:blur(2px); backdrop-filter:blur(2px)";
+      wallpaper.style = "transform: scale(1.8)";
+      suratin.style = "display:none";
+      ket.style = "display:none";
+      fotoakhir.style = "display:inline-flex;";
+      setTimeout(ftmuncul, 100);
+      Content.style = "opacity:1;margin-top:2vh;";
+      bq.style = "opacity:1;visibility:visible;margin-top:5px";
+      otomatis();
+      fungsi = 1;
+      setTimeout(tombol, 500);
+    }
 
-    function otomatis2() { befanimkata2(); setTimeout(animkata2, 700); }
-    function befanimkata2() { kalimat.style.opacity = "0"; kalimatb.style.opacity = "0"; kalimatc.style.opacity = "0"; }
-    function animkata2() { kalimat.innerHTML = kalimat2.innerHTML; kalimatb.innerHTML = kalimatb2.innerHTML; kalimatc.innerHTML = kalimatc2.innerHTML; kalimat.style.opacity = "1"; kalimatb.style.opacity = "1"; kalimatc.style.opacity = "1"; }
+    function ftmuncul() {
+      if (ftganti == 0) {
+        fotoakhir.style = "display:inline-flex;opacity:1;transform:scale(1)";
+      } else {
+        fotoakhir.src = fotoakhir2.src;
+        fotoakhir.style = "display:inline-flex;opacity:1;transition:all .7s ease;transform:scale(1)";
+      }
+    }
 
-    function ngetik2() { if (ai < katangetik2.length) { kalimatd.innerHTML += katangetik2.charAt(ai); ai++; setTimeout(ngetik2, 100); } if (ai == katangetik2.length) { kalimatd.style.animation = "rto 1s infinite alternate"; } }
 
-    function sbakhir() { Bn.style.display = "none"; setTimeout(stakhir, 1000); } function stakhir() { tmbl.innerHTML = "💌 Kirim"; tmbl.style = "font-size:12px"; Tombol.style = "margin-top:10px;opacity:1;transform: scale(1)"; ftom = 5; fungsi = 0; }
+    function fthilang() {
+      fotoakhir.style = "display:inline-flex;opacity:1;transition:all .7s ease;transform:scale(.1)";
+    }
 
-    async function menuju() { await swals.fire('OK!', 'Teken ini coba yangg', 'success'); window.location = "https://api.whatsapp.com/send?phone=6285156592475&text=I love youu sayangg!!!" + pesanwhatsapp; Tombol.style = "margin-top:15px;opacity:1;transform: scale(1);"; } setTimeout(showDiv, 100);
+    function tombol() {
+      Tombol.style = "margin-top:15px;opacity:1;transform: scale(1);";
+      Bn.style = "margin:12px 0 12px 12px";
+      ftom = 1;
+    }
 
-    async function diterima() { setInterval(createHeart, 200); fthilang(); ftganti = 1; setTimeout(ftmuncul, 400); wallpaper.style = "transform: scale(1)"; Tombol.style = "opacity:0;transform: scale(.1);"; setTimeout(sbakhir, 2000); otomatis2(); }
+    ftom = 0;
+
+    function fakhiran() {
+      document.getElementById("akhiran").style = "display:inline-flex";
+    }
+
+    const swalst = Swal.mixin({
+      timer: 2500,
+      allowOutsideClick: false,
+      showConfirmButton: false,
+      timerProgressBar: true,
+      imageWidth: 90,
+      imageHeight: 90,
+    });
+
+    audio = new Audio('' + linkmp3.innerHTML);
+    const swals = Swal.mixin({
+      allowOutsideClick: false,
+      cancelButtonColor: '#FF0040',
+      imageWidth: 100,
+      imageHeight: 100,
+    });
+
+    const style = document.createElement('style');
+    var today = new Date();
+    var dd = String(today.getDate()).padStart(2, '0');
+    var mm = String(today.getMonth() + 1).padStart(2, '0');
+    var yyyy = today.getFullYear();
+    const monthNames = ["Januari", "Februari", "Maret", "April", "Mei", "Juni", "Juli", "Agustus", "September", "Oktober", "November", "Desember"]; today = dd + ' ' + monthNames[today.getMonth()] + ' ' + yyyy;
+
+
+    function multifungsi() {
+      if (ftom == 1) {
+        diterima();
+      } if (ftom == 5) {
+        menuju();
+      }
+    }
+
+
+    function otomatis() {
+      befanimkata();
+      setTimeout(animkata, 300);
+    }
+
+
+    function befanimkata() {
+      kalimat.style = "transform:scale(.3);";
+      kalimatb.style = "transform:scale(.3);";
+      kalimatc.style = "transform:scale(.3);";
+    }
+
+
+    function animkata() {
+      kalimat.style = "transform:scale(1);";
+      kalimatb.style = "transform:scale(1);";
+      kalimatc.style = "transform:scale(1);";
+    }
+
+    function otomatis2() {
+      befanimkata2();
+      setTimeout(animkata2, 700);
+    }
+
+
+    function befanimkata2() {
+      kalimat.style.opacity = "0";
+      kalimatb.style.opacity = "0";
+      kalimatc.style.opacity = "0";
+    }
+
+
+    function animkata2() {
+      kalimat.innerHTML = kalimat2.innerHTML;
+      kalimatb.innerHTML = kalimatb2.innerHTML;
+      kalimatc.innerHTML = kalimatc2.innerHTML;
+      kalimat.style.opacity = "1";
+      kalimatb.style.opacity = "1";
+      kalimatc.style.opacity = "1";
+    }
+
+    function ngetik2() {
+      if (ai < katangetik2.length) {
+        kalimatd.innerHTML += katangetik2.charAt(ai);
+        ai++; setTimeout(ngetik2, 100);
+      } if (ai == katangetik2.length) {
+        kalimatd.style.animation = "rto 1s infinite alternate";
+      }
+    }
+
+    function sbakhir() {
+      Bn.style.display = "none";
+      setTimeout(stakhir, 1000);
+    }
+
+    function stakhir() {
+      tmbl.innerHTML = "💌 Kirim";
+      tmbl.style = "font-size:12px";
+      Tombol.style = "margin-top:10px;opacity:1;transform: scale(1)";
+      ftom = 5;
+      fungsi = 0;
+    }
+
+    async function menuju() {
+      await swals.fire('OK!', 'Teken ini coba yangg', 'success');
+      window.location = "https://api.whatsapp.com/send?phone=6285156592475&text=" + pesanwhatsapp;
+      Tombol.style = "margin-top:15px;opacity:1;transform: scale(1);";
+    }
+
+    setTimeout(showDiv, 100);
+
+    async function diterima() {
+      setInterval(createHeart, 200);
+      fthilang();
+      ftganti = 1;
+      setTimeout(ftmuncul, 400);
+      wallpaper.style = "transform: scale(1)";
+      Tombol.style = "opacity:0;transform: scale(.1);";
+      setTimeout(sbakhir, 2000);
+      otomatis2();
+    }
 
     async function tolak() {
       if (fungsi == 1) {
@@ -119,7 +271,9 @@ di background-image URL -->
         else if (flagg == 3) { await swalst.fire({ title: '' + kataditolak.innerHTML, timer: 1500, imageUrl: '' + stikerditolak.src, }); Bn.style = "margin:12px 0 12px 12px;transform: rotate(0)"; buttonv2.style = "opacity:0;"; By.style = "opacity:1"; flagg = 1 }
       }
     }
+
     tekstolak1 = teksditolak1.innerHTML; tekstolak2 = teksditolak2.innerHTML;
+
   </script> <!-- Sampai Sini -->
   <script>const body = document.querySelector("body"); function createHeart() { const heart = document.createElement("div"); heart.className = "fas fa-heart"; heart.style.left = (Math.random() * 90) + "vw"; heart.style.animationDuration = (Math.random() * 3) + 2 + "s"; body.appendChild(heart); } setInterval(function name(params) { var heartArr = document.querySelectorAll(".fa-heart"); if (heartArr.length > 100) { heartArr[0].remove() } }, 100);</script>
 </body>
